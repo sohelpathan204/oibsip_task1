@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunshine Flowers</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Merriweather:wght@900&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('main.jpg')no-repeat center center/cover;
+        height: 50px;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .left div {
+        text-align: center;
+
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 19px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(15, 8, 8);
+    }
+
+    .btn {
+        font-family: 'Roboto', sans-serif;
+        margin: 0px 9px;
+        background-color: rgb(8, 112, 48);
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(93, 168, 118);
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo1.png" alt="">
+            <div>Sunshine Flowers</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Flowers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Register Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome To Sunshine Flowers</h1>
+        <p>Flowers always make people better, happier and helpful;<br>They are sunshine, food and medicine to the soul.
+        </p>
+        <button class="btn1">Book Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">About Fowers</h1>
+        <div id="services">
+            <div class="box">
+                <img src="RR11.png" alt="">
+                <h2 class="h-secondary center">SunFlowers</h2>
+                <p class="center">Sunflowers symbolise loyalty, adoration thanks to the myth of Clytie and Apollo. And, because of their association with the sun, sunflowers are well-known for being a happy flower and the perfect bloom for a summer flower delivery to brighten someone's mood! The wild flowers are much smaller and “weedy” looking, and they are indeed scented. It's just not a very “floral” kind of smell. It's a “resinous” kind of smell.</p>
+            </div>
+            <div class="box">
+                <img src="RR12.jpg" alt="">
+                <h2 class="h-secondary center">Bunch Of Roses</h2>
+                <p class="center">
+                    Representing the couple and their shared love, a bouquet of three roses is traditional one month anniversary gift. Whether it's a school crush or a more mature passion, six roses symbolizes infatuation. To send the message "We'll be together forever," send a bouquet of nine roses. Roses have a wide range of complicated smells, from floral and tea aromas to spicy, fruity, and musky scents. A rose's appearance is a beautiful sight to behold, and its fragrance is just as lovely.</p>
+            </div>
+            <div class="box">
+                <img src="RR13.png" alt="">
+                <h2 class="h-secondary center">Flower bouquet</h2>
+                <p class="center">A flower bouquet is a collection of flowers in a creative arrangement. Flower bouquets can be arranged for the decor of homes or public buildings, or may be handheld. Flower bouquets are often given for special occasions such as birthdays, anniversaries or funerals. They are also used extensively in weddings as well as Olympics Medal Ceremonies. Bouquets arranged in vases or planters for home decor can be arranged in either traditional or modern styles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message : "></textarea>
+                </div>
+                <center><button class="btn center">Submit</button></center>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>About Us | Privacy policy<br>
+        Terms of use | Contact Us</p>
+      </footer>
+</body>
+
+</html>
